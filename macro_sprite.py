@@ -8,7 +8,7 @@ from pynput import keyboard
 
 DEFAULT_FILE = "default.json"
 
-# --- 全新的智能显示格式化工具 ---
+# --- 智能显示格式化工具 ---
 
 
 def format_key_for_display(key_str):
@@ -40,7 +40,7 @@ def format_sequence(actions_list):
 
 
 def is_modifier_name(name):
-    """仅用于兼容旧版本JSON文件时的猜测辅助函数"""
+    """仅用于兼容旧版本JSON文件猜测辅助函数"""
     return any(m in name.lower() for m in ['ctrl', 'shift', 'alt', 'cmd', 'win'])
 
 
